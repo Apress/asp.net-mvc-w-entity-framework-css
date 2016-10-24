@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="D:\VS2015_Projects\BabyStore - CH13\BabyStore\obj\Debug\Package\PackageTmp" />
+  <setAcl path="D:\VS2015_Projects\BabyStore - CH13\BabyStore\obj\Debug\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="D:\VS2015_Projects\BabyStore - CH13\BabyStore\obj\Debug\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

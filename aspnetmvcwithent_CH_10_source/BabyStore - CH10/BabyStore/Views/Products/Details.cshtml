@@ -1,0 +1,81 @@
+﻿@model BabyStore.Models.Product
+
+@{
+    ViewBag.Title = "Product Details";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Category.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        @if (Model.ProductImageMappings != null && Model.ProductImageMappings.Any())
+        {
+            <dt></dt>
+            <dd>
+                <img src="@(Url.Content(Constants.ProductImagePath) + Model.ProductImageMappings.OrderBy(pim =>	pim.ImageNumber).ElementAt(0).ProductImage.FileName)" style=padding:5px>
+            </dd>
+            <dt></dt>
+            <dd>
+                @foreach (var item in Model.ProductImageMappings.OrderBy(pim => pim.ImageNumber))
+                {
+                    <a href="@(Url.Content(Constants.ProductImagePath) + item.ProductImage.FileName)">
+                        <img src="@(Url.Content(Constants.ProductThumbnailPath) + item.ProductImage.FileName)" style=padding:5px>
+                    </a>
+                }
+            </dd>
+        }
+        <dt>
+            Quantity:
+        </dt>
+        <dd>
+            @using (Html.BeginForm("AddToBasket", "Basket"))
+            {
+                @Html.AntiForgeryToken()
+                @Html.HiddenFor(model => model.ID)
+                @Html.DropDownList("quantity", Enumerable.Range(1, 10).Select(i => new SelectListItem { Text = i.ToString(), Value = i.ToString() }))
+                <input type="submit" class="btn btn-primary btn-xs" value="Add to Basket">
+            }
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+    {
+        @Html.ActionLink("Edit", "Edit", new { id = Model.ID })
+        @Html.Raw(" | ")
+    }
+    @Html.ActionLink("Back to List", "Index")
+</p>

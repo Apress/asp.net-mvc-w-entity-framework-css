@@ -1,0 +1,92 @@
+﻿@model BabyStore.Models.Order
+
+@{
+    ViewBag.Title = "Order Details";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<hr />
+<div class="row">
+    <div class="col-md-8">
+        <h4>Items(s)</h4>
+    </div>
+    <div class="col-md-2">
+        <h4>Quantity</h4>
+    </div>
+    <div class="col-md-2">
+        <h4>Unit Price</h4>
+    </div>
+</div>
+@foreach (var item in Model.OrderLines)
+{
+    <div class="row">
+        <div class="col-md-8">@Html.DisplayFor(pn => item.ProductName)</div>
+        <div class="col-md-2">@Html.DisplayFor(q => item.Quantity)</div>
+        <div class="col-md-2">@Html.DisplayFor(up => item.UnitPrice)</div>
+    </div>
+}
+<hr />
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeliveryName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeliveryName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeliveryAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeliveryAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateCreated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateCreated)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

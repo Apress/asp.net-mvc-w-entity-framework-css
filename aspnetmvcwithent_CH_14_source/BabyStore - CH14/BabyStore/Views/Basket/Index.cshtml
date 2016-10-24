@@ -1,0 +1,79 @@
+﻿@model BabyStore.ViewModels.BasketViewModel
+
+@{
+    ViewBag.Title = "Your Basket";
+}
+
+<h2>@ViewBag.Title</h2>
+@if (Model.BasketLines.Count() > 0)
+{
+    <div>
+        @using (Html.BeginForm("UpdateBasket", "Basket"))
+        {
+            @Html.AntiForgeryToken();
+            <input class="btn btn-sm btn-success" type="submit" value="Update Basket" />
+            <hr />
+            <div class="row">
+                <div class="col-md-4"><label>Item</label></div>
+                <div class="col-md-3"><label>Quantity</label></div>
+                <div class="col-md-1"><label>Price</label></div>
+                <div class="col-md-1"><label>Subtotal</label></div>
+            </div>
+            <hr />
+            for (int i = 0; i < Model.BasketLines.Count; i++)
+            {
+            <div class="row">
+                <div class="col-md-4">
+                    @Html.ActionLink(Model.BasketLines[i].Product.Name, "Details", "Products", new { id = Model.BasketLines[i].ProductID }, null)<br />
+                    @if (Model.BasketLines[i].Product.ProductImageMappings != null && Model.BasketLines[i].Product.ProductImageMappings.Any())
+                    {
+                        <a href="@Url.Action("Details", "Products", new { id = Model.BasketLines[i].ProductID })">
+                            <img src="@(Url.Content(Constants.ProductThumbnailPath) + 
+                                Model.BasketLines[i].Product.ProductImageMappings.OrderBy(pim => pim.ImageNumber).ElementAt(0).ProductImage.FileName)">
+                        </a>
+                    }
+                </div>
+                <div class="col-md-3">
+                    @Html.HiddenFor(productID => Model.BasketLines[i].ProductID)
+                    @Html.TextBoxFor(quantity => Model.BasketLines[i].Quantity)
+                    <p>
+                        @Html.ValidationMessageFor(quantity => Model.BasketLines[i].Quantity,"", new { @class = "text-danger" })
+                    </p>
+                </div>
+                <div class="col-md-1">
+                    @Html.DisplayFor(price => Model.BasketLines[i].Product.Price)
+                </div>
+                <div class="col-md-1">
+                    @((Model.BasketLines[i].Quantity * Model.BasketLines[i].Product.Price).ToString("c"))
+                </div>
+                <div class="col-md-1">
+                    @Html.ActionLink("Remove", "RemoveLine", "Basket", new { id = Model.BasketLines[i].Product.ID }, null)
+                </div>
+            </div>
+            <hr />
+            }
+        }
+        <div class="row">
+            <div class="col-md-8">
+                @Html.DisplayNameFor(model => model.TotalCost)
+            </div>
+            <div class="col-md-1">
+                @Html.DisplayFor(model => model.TotalCost)
+            </div>
+            <div class="col-md-1">
+                @Html.ActionLink("Order Now", "Review", "Orders", null, new { @class = "btn btn-sm btn-success" })
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <p>Your Basket is empty</p>
+}
+<div>
+    @Html.ActionLink("Continue Shopping", "Index", "Products")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

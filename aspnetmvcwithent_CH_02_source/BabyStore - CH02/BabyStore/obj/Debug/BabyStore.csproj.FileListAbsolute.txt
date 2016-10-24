@@ -1,0 +1,138 @@
+D:\VS2015_Projects\BabyStore\BabyStore\bin\roslyn\csc.exe
+D:\VS2015_Projects\BabyStore\BabyStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\VS2015_Projects\BabyStore\BabyStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\VS2015_Projects\BabyStore\BabyStore\bin\roslyn\System.Collections.Immutable.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\roslyn\System.Reflection.Metadata.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\roslyn\vbc.exe
+D:\VS2015_Projects\BabyStore\BabyStore\bin\roslyn\VBCSCompiler.exe
+D:\VS2015_Projects\BabyStore\BabyStore\bin\roslyn\VBCSCompiler.exe.config
+D:\VS2015_Projects\BabyStore\BabyStore\bin\BabyStore.dll.config
+D:\VS2015_Projects\BabyStore\BabyStore\bin\BabyStore.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\BabyStore.pdb
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Antlr3.Runtime.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\EntityFramework.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\EntityFramework.SqlServer.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.AspNet.Identity.Core.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.Owin.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.Owin.Security.Cookies.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.Owin.Security.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.Owin.Security.Facebook.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.Owin.Security.Google.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.Owin.Security.OAuth.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.Owin.Security.Twitter.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.Web.Infrastructure.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Newtonsoft.Json.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Owin.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\System.Web.Helpers.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\System.Web.Mvc.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\System.Web.Optimization.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\System.Web.Razor.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\System.Web.WebPages.Deployment.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\System.Web.WebPages.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\System.Web.WebPages.Razor.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\WebGrease.dll
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\VS2015_Projects\BabyStore\BabyStore\bin\System.Web.Helpers.xml
+D:\VS2015_Projects\BabyStore\BabyStore\bin\System.Web.Mvc.xml
+D:\VS2015_Projects\BabyStore\BabyStore\bin\System.Web.Optimization.xml
+D:\VS2015_Projects\BabyStore\BabyStore\bin\System.Web.Razor.xml
+D:\VS2015_Projects\BabyStore\BabyStore\bin\System.Web.WebPages.xml
+D:\VS2015_Projects\BabyStore\BabyStore\bin\System.Web.WebPages.Deployment.xml
+D:\VS2015_Projects\BabyStore\BabyStore\bin\System.Web.WebPages.Razor.xml
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Antlr3.Runtime.pdb
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Newtonsoft.Json.xml
+D:\VS2015_Projects\BabyStore\BabyStore\bin\EntityFramework.xml
+D:\VS2015_Projects\BabyStore\BabyStore\bin\EntityFramework.SqlServer.xml
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.AspNet.Identity.Core.xml
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.Owin.xml
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.Owin.Security.xml
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.Owin.Security.Facebook.xml
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.Owin.Security.Cookies.xml
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.Owin.Security.OAuth.xml
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.Owin.Security.Google.xml
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.Owin.Security.Twitter.xml
+D:\VS2015_Projects\BabyStore\BabyStore\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\VS2015_Projects\BabyStore\BabyStore\obj\Debug\BabyStore.csprojResolveAssemblyReference.cache
+D:\VS2015_Projects\BabyStore\BabyStore\obj\Debug\BabyStore.dll
+D:\VS2015_Projects\BabyStore\BabyStore\obj\Debug\BabyStore.pdb
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\roslyn\csc.exe
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\roslyn\System.Collections.Immutable.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\roslyn\System.Reflection.Metadata.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\roslyn\vbc.exe
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\roslyn\VBCSCompiler.exe
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\roslyn\VBCSCompiler.exe.config
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\BabyStore.dll.config
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\BabyStore.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\BabyStore.pdb
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Antlr3.Runtime.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\EntityFramework.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\EntityFramework.SqlServer.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.AspNet.Identity.Core.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.Owin.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.Owin.Security.Cookies.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.Owin.Security.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.Owin.Security.Facebook.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.Owin.Security.Google.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.Owin.Security.OAuth.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.Owin.Security.Twitter.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.Web.Infrastructure.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Newtonsoft.Json.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Owin.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\System.Web.Helpers.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\System.Web.Mvc.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\System.Web.Optimization.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\System.Web.Razor.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\System.Web.WebPages.Deployment.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\System.Web.WebPages.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\System.Web.WebPages.Razor.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\WebGrease.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\System.Web.Helpers.xml
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\System.Web.Mvc.xml
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\System.Web.Optimization.xml
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\System.Web.Razor.xml
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\System.Web.WebPages.xml
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\System.Web.WebPages.Deployment.xml
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\System.Web.WebPages.Razor.xml
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Antlr3.Runtime.pdb
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Newtonsoft.Json.xml
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\EntityFramework.xml
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\EntityFramework.SqlServer.xml
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.AspNet.Identity.Core.xml
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.Owin.xml
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.Owin.Security.xml
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.Owin.Security.Facebook.xml
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.Owin.Security.Cookies.xml
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.Owin.Security.OAuth.xml
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.Owin.Security.Google.xml
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.Owin.Security.Twitter.xml
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\obj\Debug\BabyStore.csprojResolveAssemblyReference.cache
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\obj\Debug\BabyStore.dll
+D:\VS2015_Projects\BabyStore - CH02\BabyStore\obj\Debug\BabyStore.pdb

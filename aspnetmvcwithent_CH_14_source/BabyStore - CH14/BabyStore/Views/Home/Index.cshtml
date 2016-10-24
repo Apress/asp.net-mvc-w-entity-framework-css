@@ -1,0 +1,28 @@
+﻿@model IEnumerable<BabyStore.ViewModels.BestSellersViewModel>
+@{
+    ViewBag.Title = "Baby Store Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Welcome to the Baby Store!</h1>
+    <h2>Here is a selection of our best selling products</h2>
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-3">
+                @if (item.ProductImage != null)
+                {
+                    <a href="@Url.Action("Details", "Products", new { id = item.Product.ID })">
+                        <img src="@(Url.Content(Constants.ProductImagePath) + item.ProductImage)">
+                    </a>
+                }
+                <p>
+                    @Html.ActionLink(item.Product.Name, "Details", "Products", new { id = item.Product.ID }, null)
+            </p>
+        </div>
+        }
+    </div>
+    <p>
+        @Html.ActionLink("Shop Now", "Index", "Products", null, new { @class = "btn btn-primary btn-lg" })
+</p>
+</div>

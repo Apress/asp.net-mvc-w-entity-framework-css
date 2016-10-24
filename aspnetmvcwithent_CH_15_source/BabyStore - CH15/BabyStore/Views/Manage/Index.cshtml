@@ -1,0 +1,26 @@
+﻿@model BabyStore.Models.ApplicationUser
+
+@{
+    ViewBag.Title = "My Details";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        @Html.Partial("_UserDetailsPartial", Model)
+        <dt>
+            Password
+        </dt>
+        <dd>
+            @Html.ActionLink("Change your password", "ChangePassword")
+        </dd>
+    </dl>
+</div>
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id })
+</p>
+<h2>@Html.ActionLink("View my orders", "Index", "Orders")</h2>
+

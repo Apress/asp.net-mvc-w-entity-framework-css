@@ -1,0 +1,98 @@
+﻿@model IEnumerable<BabyStore.Models.Order>
+@using BabyStore.HTMLHelpers;
+
+@{
+    ViewBag.Title = "Orders";
+}
+
+<h2>@ViewBag.Title</h2>
+@using (Html.BeginForm("Index", "Orders", FormMethod.Get))
+{
+    <div class="row form-group">
+        <div class="col-md-2">
+            <label>Search Orders by ID or Text:</label>
+        </div>
+        <div class="col-md-3">
+            @Html.TextBox("OrderSearch", null, new { @class = "form-control", @placeholder = "Search Orders"})
+        </div>
+        <div class="col-md-2">
+            <label>Search between dates:</label>
+        </div>
+        <div class="col-md-2">
+            <input type="date" id="StartDate" name="StartDate" class="form-control" value="@Request.QueryString["StartDate"]" />
+        </div>
+        <div class="col-md-2">
+            <input type="date" id="EndDate" name="EndDate" class="form-control" value="@Request.QueryString["EndDate"]" />
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+
+}
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderID)
+        </th>
+        <th>
+            @Html.ActionLink("User", "Index", new { orderSortOrder = ViewBag.UserSort, orderSearch = ViewBag.CurrentOrderSearch, startdate = ViewBag.StartDate,
+                endDate = ViewBag.EndDate })
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DeliveryName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DeliveryAddress)
+        </th>
+        <th>
+            @Html.ActionLink("Total Price", "Index", new { orderSortOrder = ViewBag.PriceSort, orderSearch = ViewBag.CurrentOrderSearch,
+                startdate = ViewBag.StartDate, endDate = ViewBag.EndDate })
+        </th>
+        <th>
+            @Html.ActionLink("Time of Order", "Index", new { orderSortOrder = ViewBag.DateSort, orderSearch = ViewBag.CurrentOrderSearch,
+                startdate = ViewBag.StartDate, endDate = ViewBag.EndDate })
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeliveryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeliveryAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateCreated)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Details", new { id = item.OrderID })
+            </td>
+        </tr>
+    }
+
+</table>
+<div class="paging small-bold-text">
+    @Html.GeneratePageLinks((int)ViewBag.CurrentPage, (int)ViewBag.TotalPages, page =>
+         Url.Action("Index", 
+             new {
+                 page,
+                 orderSortOrder = ViewBag.CurrentSortOrder,
+                 orderSearch = ViewBag.CurrentOrderSearch,
+                 startdate = ViewBag.StartDate,
+                 endDate = ViewBag.EndDate
+             }
+         )
+     )
+</div>

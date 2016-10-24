@@ -1,0 +1,8 @@
+﻿@model BabyStore.ViewModels.BasketSummaryViewModel
+
+<ul class="nav navbar-nav navbar-right">
+    <li>
+        @Html.ActionLink("Your basket: " + Model.NumberOfItems + " items(s) " +
+            HttpUtility.HtmlDecode(Html.DisplayFor(model => Model.TotalCost).ToString()), "Index", "Basket")
+    </li>
+</ul>

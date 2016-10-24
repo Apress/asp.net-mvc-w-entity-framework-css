@@ -1,0 +1,35 @@
+﻿@model BabyStore.Models.ApplicationUser
+
+@{
+    ViewBag.Title = "User Details";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+       @Html.Partial("_UserDetailsPartial", Model)
+    </dl>
+</div>
+<div class="container">
+    <div class="row">
+        <h4>Roles this user belongs to:</h4>
+    </div>
+    @if (ViewBag.RoleNames.Count == 0)
+    {
+        <hr />
+        <p>No roles found for this user</p>
+    }
+
+    @foreach (var item in ViewBag.RoleNames)
+    {
+        <div class="row">
+            @item
+        </div>
+    }
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,85 @@
+﻿@model BabyStore.ViewModels.ProductIndexViewModel
+@using PagedList.Mvc
+
+@{
+    ViewBag.Title = "Products";
+}
+
+<h2>@ViewBag.Title</h2>
+<p>
+    @(String.IsNullOrWhiteSpace(Model.Search) ? "Showing all" : "You search for " + Model.Search + " found")  @Model.Products.TotalItemCount products
+</p>
+
+<p>
+    @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+    {
+        @Html.ActionLink("Create New", "Create")
+    }
+    @using (Html.BeginRouteForm("ProductsIndex", FormMethod.Get))
+    {
+        <label>Filter by category:</label>
+        @Html.DropDownListFor(vm => vm.Category, Model.CatFilterItems, "All");
+        <label>Sort by:</label>
+        @Html.DropDownListFor(vm => vm.SortBy, new SelectList(Model.Sorts, "Value", "Key"), "Default")
+        <input type="submit" value="Filter" />
+        <input type="hidden" name="Search" id="Search" value="@Model.Search" />
+    }
+</p>
+<table class="table">
+    <tr>
+        <th></th>
+        <th>
+            @Html.DisplayNameFor(model => model.Category)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Products.First().Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Products.First().Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Products.First().Price)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model.Products) {
+    <tr>
+        <td>
+            @if (item.ProductImageMappings != null && item.ProductImageMappings.Any())
+            {
+                <a href="@Url.Action("Details", new { id = item.ID})">
+                    <img src="@(Url.Content(Constants.ProductImagePath) + item.ProductImageMappings.OrderBy(pim => pim.ImageNumber).ElementAt(0).ProductImage.FileName)">
+                </a>
+            }
+        </td>
+
+        <td>
+            @Html.DisplayFor(modelItem => item.Category.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @if (Request.IsAuthenticated && User.IsInRole("Admin"))
+            {
+                @Html.ActionLink("Edit", "Edit", new { id = item.ID })
+                @Html.Raw(" | ")
+                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+            }
+        </td>
+    </tr>
+}
+
+</table>
+<div>
+    Page @(Model.Products.PageCount < Model.Products.PageNumber ? 0 : Model.Products.PageNumber) of @Model.Products.PageCount
+    @Html.PagedListPager(Model.Products, page => Url.Action("Index", new { category = @Model.Category, Search = @Model.Search, sortBy = @Model.SortBy, page}))
+</div>
+
